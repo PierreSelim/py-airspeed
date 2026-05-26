@@ -1,0 +1,16 @@
+[package]
+name = "airspeed-core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "_core"
+crate-type = ["cdylib"]
+path = "src-rust/src/lib.rs"
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["abi3-py312"] }
+thiserror = "1"
+
+[features]
+extension-module = ["pyo3/extension-module"]

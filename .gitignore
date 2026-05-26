@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# uv / virtualenv
+.venv/
+
+# Rust
+target/
+**/*.rs.bk
+
+# Build outputs (maturin)
+dist/
+*.egg-info/
+*.whl
+*.pdb
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.idea/
+.vscode/
